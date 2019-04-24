@@ -5,7 +5,6 @@ class PigLatinizer
   end
 
   def piglatinize(text)
-    binding.pry
     words = text.downcase.split(" ")
     words.map! do |word|
       if !"aeiou".include?(word[0])

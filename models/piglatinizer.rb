@@ -6,7 +6,7 @@ class PigLatinizer
 
   def piglatinize(text)
     binding.pry
-    words = text.split(" ")
+    words = text.downcase.split(" ")
     words.map! do |word|
       if !"aeiou".include?(word[0])
         start_consonants = word.scan(/^[^aeiou]*/i)[0]

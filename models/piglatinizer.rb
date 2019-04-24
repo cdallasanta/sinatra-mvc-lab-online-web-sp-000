@@ -12,6 +12,7 @@ class PigLatinizer
         mid_word = word.split(start_consonants)[1]
         word = mid_word + start_consonants + "ay"
       else
+        binding.pry
         word << "way"
       end
     end

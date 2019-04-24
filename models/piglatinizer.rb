@@ -8,7 +8,7 @@ class PigLatinizer
     binding.pry
     words = text.split(" ")
     words.each do |word|
-      start_consonants[0] = word.scan(/^[^aeiou]*/i)
+      start_consonants = word.scan(/^[^aeiou]*/i)[0]
       word.split(start_consonants)
   end
 end

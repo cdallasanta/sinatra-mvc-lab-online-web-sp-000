@@ -9,6 +9,6 @@ class PigLatinizer
     words = text.split(" ")
     words.each do |word|
       start_consonants = word.scan(/^[^aeiou]*/i)[0]
-      word.split(start_consonants)
+      word.split(start_consonants)[1]
   end
 end

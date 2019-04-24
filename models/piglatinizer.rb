@@ -5,6 +5,6 @@ class Piglatinizer
     @text = text
   end
 
-  def self.run()
+  def piglatinize
   end
 end

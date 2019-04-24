@@ -16,5 +16,6 @@ class PigLatinizer
         word += "ay"
       end
     end
+    words.join(' ')
   end
 end
